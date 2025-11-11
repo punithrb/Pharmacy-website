@@ -1,0 +1,130 @@
+.card {
+  background-color: var(--color-white);
+  border: 1px solid var(--color-card-border);
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: var(--shadow-sm);
+  transition: transform 0.3s, box-shadow 0.3s;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: var(--shadow-lg);
+}
+
+.badge {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background-color: var(--color-danger);
+  color: var(--color-white);
+  padding: 4px 8px;
+  border-radius: 4px;
+  font-weight: bold;
+  z-index: 10;
+  animation: pulse 1s infinite alternate;
+}
+
+@keyframes pulse {
+  from { transform: scale(1); }
+  to { transform: scale(1.05); }
+}
+
+.imagePlaceholder {
+  height: 150px;
+  background-color: var(--color-light-gray);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 0.9rem;
+  color: #6c757d;
+}
+
+.details {
+  padding: 15px;
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.nameLink {
+  text-decoration: none;
+  color: var(--color-primary);
+  transition: color 0.2s;
+}
+
+.nameLink h4 {
+  font-size: 1.1rem;
+  margin-bottom: 5px;
+}
+
+.nameLink:hover {
+  color: #0056b3;
+}
+
+.brand {
+  font-size: 0.85rem;
+  color: #6c757d;
+  margin-bottom: 10px;
+}
+
+.priceContainer {
+  margin-bottom: 10px;
+}
+
+.price {
+  font-size: 1.25rem;
+  font-weight: bold;
+  color: var(--color-secondary);
+  margin-right: 5px;
+}
+
+.originalPrice {
+  text-decoration: line-through;
+  color: #6c757d;
+  font-size: 0.9rem;
+}
+
+.availability {
+  font-size: 0.9rem;
+  font-weight: 500;
+  margin-top: auto; /* Push to bottom */
+  margin-bottom: 15px;
+}
+
+.available {
+  color: var(--color-secondary);
+}
+
+.unavailable {
+  color: var(--color-danger);
+}
+
+.actions {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 10px;
+}
+
+.actions button {
+  flex-grow: 1;
+  margin-right: 5px;
+}
+
+.compareBtn {
+  background-color: var(--color-light-gray);
+  color: var(--color-text);
+  padding: 10px;
+  font-size: 1rem;
+  border-radius: 5px;
+  flex-grow: 0;
+  margin-left: 5px;
+}
+
+.compareBtn:hover {
+  background-color: #dee2e6;
+}

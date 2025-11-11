@@ -1,0 +1,123 @@
+.profilePage {
+  padding: 20px 0;
+}
+
+.profilePage h1 {
+  text-align: center;
+  margin-bottom: 5px;
+}
+
+.email {
+  text-align: center;
+  color: #6c757d;
+  margin-bottom: 30px;
+}
+
+.status, .error {
+  text-align: center;
+  padding: 50px;
+}
+
+.error {
+  color: var(--color-danger);
+}
+
+.gridContainer {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+
+.sectionCard {
+  flex: 1 1 45%;
+  background-color: var(--color-light-gray);
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: var(--shadow-sm);
+  min-width: 300px;
+}
+
+.sectionCardFull {
+  flex: 1 1 100%;
+  background-color: var(--color-light-gray);
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: var(--shadow-sm);
+}
+
+.sectionCard h2, .sectionCardFull h2 {
+  color: #004d99;
+  margin-bottom: 15px;
+  border-bottom: 1px solid var(--color-card-border);
+  padding-bottom: 5px;
+}
+
+.sectionCard button {
+  margin-top: 15px;
+  width: 100%;
+}
+
+.list {
+  list-style: none;
+  padding: 0;
+  margin-bottom: 15px;
+}
+
+.list li {
+  background-color: var(--color-white);
+  padding: 10px;
+  border-radius: 4px;
+  border: 1px solid var(--color-card-border);
+  margin-bottom: 8px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 0.95rem;
+}
+
+/* .prescriptionItem {
+  /* Specific styling for prescription status */
+/* } */
+
+.verified {
+  color: var(--color-secondary);
+  font-weight: 600;
+}
+
+.pending {
+  color: var(--color-danger);
+  font-weight: 600;
+}
+
+/* Order Table */
+.orderTable {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.orderTable th, .orderTable td {
+  padding: 12px;
+  text-align: left;
+  border-bottom: 1px solid var(--color-card-border);
+}
+
+.orderTable th {
+  background-color: #e9ecef;
+  font-weight: 600;
+  color: var(--color-text);
+}
+
+.Delivered {
+  color: var(--color-secondary);
+  font-weight: 600;
+}
+
+.Shipped {
+  color: var(--color-primary);
+  font-weight: 600;
+}
+
+.detailsLink {
+  color: var(--color-primary);
+  text-decoration: none;
+}

@@ -1,0 +1,206 @@
+.productPage {
+  padding: 20px 0;
+  position: relative; /* For chat widget positioning */
+}
+
+.notFound {
+  text-align: center;
+  color: var(--color-danger);
+  padding: 50px;
+}
+
+.gridContainer {
+  display: flex;
+  gap: 40px;
+  flex-wrap: wrap;
+}
+
+.imageSection {
+  flex: 1 1 400px;
+  position: relative;
+}
+
+.mainImagePlaceholder {
+  height: 400px;
+  background-color: var(--color-light-gray);
+  border: 1px solid var(--color-card-border);
+  border-radius: 8px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.2rem;
+  color: #6c757d;
+}
+
+.discountBadge {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  background-color: var(--color-danger);
+  color: var(--color-white);
+  padding: 8px 12px;
+  border-radius: 5px;
+  font-weight: bold;
+  animation: pulse 1s infinite alternate;
+}
+
+@keyframes pulse {
+  from { transform: scale(1); }
+  to { transform: scale(1.05); }
+}
+
+.infoSection {
+  flex: 1 1 500px;
+}
+
+.infoSection h1 {
+  font-size: 2rem;
+  margin-bottom: 10px;
+}
+
+.brand {
+  color: #6c757d;
+  font-size: 1.1rem;
+  margin-bottom: 20px;
+}
+
+.priceContainer {
+  margin-bottom: 30px;
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.currentPrice {
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: var(--color-secondary);
+}
+
+.originalPrice {
+  text-decoration: line-through;
+  color: #6c757d;
+  font-size: 1.2rem;
+}
+
+.availability {
+  font-weight: bold;
+  color: var(--color-secondary);
+}
+
+.actions {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 30px;
+}
+
+.quantityInput {
+  width: 70px;
+  padding: 10px;
+  border: 1px solid var(--color-card-border);
+  border-radius: 5px;
+  text-align: center;
+  font-size: 1rem;
+}
+
+/* Tabbed Layout */
+.tabContainer {
+  border: 1px solid var(--color-card-border);
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.tabs {
+  display: flex;
+  background-color: var(--color-light-gray);
+  border-bottom: 1px solid var(--color-card-border);
+}
+
+.tabs button {
+  flex-grow: 1;
+  padding: 15px 20px;
+  background: none;
+  border: none;
+  border-right: 1px solid var(--color-card-border);
+  color: var(--color-text);
+  font-weight: 500;
+  transition: background-color 0.2s;
+}
+
+.tabs button:last-child {
+  border-right: none;
+}
+
+.tabs button:hover {
+  background-color: #e9ecef;
+}
+
+.activeTab {
+  background-color: var(--color-white) !important;
+  color: var(--color-primary) !important;
+  border-bottom: 3px solid var(--color-primary) !important;
+  margin-bottom: -1px;
+}
+
+.tabContent {
+  padding: 20px;
+  min-height: 150px;
+}
+
+.tabContent ul {
+  padding-left: 20px;
+}
+
+/* Live Chat Widget */
+.liveChatWidget {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background-color: var(--color-secondary);
+  color: var(--color-white);
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  box-shadow: var(--shadow-lg);
+  transition: transform 0.3s;
+  z-index: 1001;
+}
+
+.liveChatWidget:hover {
+  transform: scale(1.1);
+}
+
+.chatIcon {
+  font-size: 1.8rem;
+  line-height: 1;
+}
+
+.chatWindow {
+  position: absolute;
+  bottom: 70px;
+  right: 0;
+  width: 300px;
+  background-color: var(--color-white);
+  border: 1px solid var(--color-card-border);
+  border-radius: 8px;
+  padding: 15px;
+  box-shadow: var(--shadow-lg);
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.chatWindow p {
+  color: var(--color-text);
+  font-size: 0.9rem;
+}
+
+.chatWindow input {
+  padding: 8px;
+  border: 1px solid var(--color-card-border);
+  border-radius: 5px;
+}

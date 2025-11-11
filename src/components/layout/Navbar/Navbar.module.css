@@ -1,0 +1,95 @@
+.navbar {
+  background-color: var(--color-white);
+  border-bottom: 1px solid var(--color-card-border);
+  padding: 10px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: var(--shadow-sm);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.logo a {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: var(--color-primary);
+  text-decoration: none;
+}
+
+.searchBar {
+  display: flex;
+  flex-grow: 0.4;
+  max-width: 400px;
+}
+
+.searchBar input {
+  padding: 10px 15px;
+  border: 1px solid var(--color-card-border);
+  border-radius: 5px 0 0 5px;
+  flex-grow: 1;
+  font-size: 1rem;
+}
+
+.searchBar button {
+  padding: 10px 15px;
+  background-color: var(--color-primary);
+  color: var(--color-white);
+  border: none;
+  border-radius: 0 5px 5px 0;
+  font-size: 1rem;
+}
+
+.navLinks a {
+  margin-left: 20px;
+  color: var(--color-text);
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.2s;
+}
+
+.navLinks a:hover {
+  color: var(--color-primary);
+}
+
+.cartLink {
+  position: relative;
+}
+
+.cartBadge {
+  position: absolute;
+  top: -8px;
+  right: -10px;
+  background-color: var(--color-danger);
+  color: var(--color-white);
+  border-radius: 50%;
+  padding: 2px 6px;
+  font-size: 0.7rem;
+  font-weight: bold;
+  line-height: 1;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .navbar {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  
+  .searchBar {
+    order: 3; /* Move search below logo and links */
+    flex-basis: 100%;
+    margin-top: 10px;
+  }
+  
+  .navLinks {
+    display: flex;
+    justify-content: space-around;
+    flex-grow: 1;
+  }
+
+  .navLinks a {
+    margin: 0 5px;
+  }
+}
