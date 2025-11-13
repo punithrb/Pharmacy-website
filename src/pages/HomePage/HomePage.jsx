@@ -20,7 +20,7 @@ const HomePage = () => {
   return (
     <div className={styles.homePage}>
       <header className={styles.hero}>
-        <h1>Fast, Secure, and Reliable Online Pharmacy</h1>
+        <h1>Online Pharmacy</h1>
         <p>Order your medicines and healthcare products with ease.</p>
         <Link to="/catalog" className="btn-primary">Shop Now</Link>
       </header>
